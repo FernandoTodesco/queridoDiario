@@ -1,24 +1,25 @@
 import React from 'react';
-import './App.css';
-import Header from './shared/header';
-import banner from './assets/banner.jpg';
+import './App.scss';
+import Header from './components/header/header';
+import Card from './components/card/card';
+import Footer from './components/footer/footer';
 
 function App() {
   return (
-    <div className="general">
-      <div className="app">
-        <div className="container">
-          <section>
-            <Header />
-            <article>
-              <h1 className="titulo">Primer Artículo</h1>
-              <h3 className="descripcion">Lugar para descripción del artículo</h3>
-            </article>
-          </section>
-          <div className="banner">
-            <img src={banner} alt="banner" />
-          </div>
-        </div>
+    <div className="app">      
+      <div className="container">
+        <header>
+          <Header />        
+        </header>
+        <article>
+          <Card />          
+        </article>
+        <section>
+          slider
+        </section>
+        <footer>
+          <Footer />
+        </footer>
       </div>
     </div>
   );

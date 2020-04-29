@@ -1,0 +1,30 @@
+@import '../../shared/layout/variables';
+
+.card {
+    background-color: $white;
+    display: grid;
+    grid-template-rows: 0.5fr 1fr 0.5fr 3fr;
+    padding: 0 15px;
+}
+
+.card__date {
+    color: $primary;
+    font-size: 16px;
+    font-weight: 400;
+    align-self: flex-end;
+}
+.card__title {
+    color: $black;
+    font-size: 45px;
+    font-weight: 600;
+}
+.card__subtitle {
+    color: $primary;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.card__img {
+    width: 300px;
+    height: auto;
+}

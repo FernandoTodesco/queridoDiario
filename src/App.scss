@@ -1,0 +1,154 @@
+@import './components/layout/variables';
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.app {
+  height: 100vh;
+  display: grid;
+  grid-template-columns: 15px 1fr 15px;
+  grid-template-rows: 20px 1fr 20px;    
+  background-color: $secondary;
+  }
+    
+  .container {
+    background-color: $white;           
+    box-shadow: 0 0 10px rgba($color: #000000, $alpha: 0.25);
+    grid-row: 2/3;
+    grid-column: 2/3;
+    display: grid;
+    grid-template-rows: 1fr 3.5fr 1fr 1fr;
+
+    header {
+      background-color: $primary;
+      display: flex;
+    }
+    
+    article {
+      background-color: lightpink;
+      display: flex;
+    }
+
+    footer {
+      background-color: $primary;
+      display: flex;
+    }
+  }
+    
+  /*      
+  @media only screen and (max-width: 361px) {
+    .banner img {  
+      transform: translate(-250px,-250px);  
+    }
+  }
+
+  @media only screen and (min-width: 361px) {
+    .container {
+      grid-template-rows: 0.7fr 4.3fr;
+      width: auto;
+    }
+    header {
+      padding: 10px 0 5px;    
+      grid-template-rows: 1.2 0.8fr;
+    }
+    .banner {  
+      height: 60vh;
+      width: auto;
+    }
+    .banner img {  
+      transform: translateY(-250px);  
+    }
+    
+  }
+
+  @media only screen and (min-width: 660px) {
+    .container {
+      grid-template-rows: 0.7fr 4.3fr;
+    }
+    header {
+      padding: 10px 0 5px;    
+      grid-template-rows: 1.2 0.8fr;
+    }
+    .banner {  
+      height: 70vh;
+      width: auto;
+    }  
+  }
+
+  @media only screen and (min-width: 900px) {
+    .app {
+      display: flex;
+      justify-content: center;
+    }
+
+    .container {
+      width: auto;
+      min-height: 100vh;
+      grid-template-columns: 1fr 1fr;
+      grid-template-rows: 3fr 1fr;
+    }
+
+    section {
+      background-color: white;
+      display: grid;
+      grid-template-rows: 1fr 4fr;
+    }
+
+    article {
+      display: grid;
+      grid-template-rows: 0.5fr 1.5fr 1.5fr 0.5fr 2fr 1fr 6fr;
+      grid-template-columns: 1fr 5fr;
+    }
+
+    h1 {
+      font-size: 2.5rem;
+      grid-row: 2/3;
+      grid-column: 2/3;
+      display: flex;
+    }
+
+    .descripcion {
+      grid-row: 3/4;
+      grid-column: 2/3;
+      display: flex;
+    }
+
+    header {
+      grid-template-columns: 3fr 6fr 1fr;    
+    }
+
+    header img {
+      width: 125px;
+    }
+
+    .banner {
+      height: 70vh;
+      overflow: hidden;
+    }
+
+    .banner img {  
+      height: 70vh;
+      width: auto;
+      transform: translate(0,0);  
+    }
+  }
+
+  @media only screen and (min-width: 1421px) {
+    .general {
+      display: grid;
+      grid-template-columns: 12.5% 1fr 12.5%;
+      background-color: rgb(180, 232, 253);
+      height: 100vh;
+    }
+    .app {
+      width: 75vw;
+      grid-column-start: 2;
+      box-shadow: 0 0 20px 1px rgb(72, 211, 169);
+    }
+  }
+*/
