@@ -1,14 +1,14 @@
 import React from 'react';
 import './card.scss';
-import imgFirst from '../../assets/imgFirst.jpg';
 
-function Card() {
+function Card(props) {
+  const imgSrc = process.env.PUBLIC_URL + '/assets/' + props.data.img;
   return (
       <div className="card">
-          <h3 className="card__date">date</h3>
-          <h1 className="card__title">title</h1>
-          <h3 className="card__subtitle">subtitle</h3>
-          <img src={imgFirst} alt="imagen del artículo" className="card__img"/>
+          <h3 className="card__date">{props.data.date}</h3>
+          <h1 className="card__title">{props.data.title}</h1>
+          <img src={imgSrc} alt={"imagen de " + props.data.title} className="card__img"/>
+          <h3 className="card__subtitle">{props.data.subtitle}</h3>
       </div>
   );
 }

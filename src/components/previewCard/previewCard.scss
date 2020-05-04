@@ -1,0 +1,41 @@
+@import '../../shared/variables';
+
+.previewCard {
+    background-color:$gradient;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    height: 150px;
+    padding: 10px;
+    box-shadow: 0 0 3px rgba($color: #000000, $alpha: 0.25);
+    
+    .previewCard__img {
+    width: auto;
+    max-height: 130px;
+    grid-column: 1/2;
+    }
+
+    .previewCard__text {
+        grid-column: 2/3;
+        padding: 0 0 0 5px;
+        @include flex(center, center);
+        flex-direction: column;
+        min-width: 109px;
+
+        .previewCard__title {
+            color: $black;
+            font-size: 25px;
+            font-weight: 500;
+        }
+
+        .previewCard__date {
+            color: $primary;            
+            font-size: 16px;
+            font-weight: 500;
+        }
+    }
+
+    &:hover {
+        box-shadow: 0 0 10px rgba($color: $primary, $alpha: 0.75);
+    }
+
+}

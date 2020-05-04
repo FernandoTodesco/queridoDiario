@@ -1,0 +1,42 @@
+[
+    {
+        "id": 0,
+        "title": "Primer Artículo",
+        "subtitle": "Descripción del primer artículo, acá tiene que entrar mucho texto.. tendría que haber buscado un lorem ipso.. lorem ipso? se escribe así? w/e",
+        "date": "30 / 04 / 2020",
+        "img": "imgFirst.jpg",
+        "active": true
+    },
+    {
+        "id": 1,
+        "title": "Segundo Artículo",
+        "subtitle": "Descripción del segundo artículo",
+        "date": "30 / 04 / 2020",
+        "img": "imgSecond.jpg",
+        "active": false
+    },
+    {
+        "id": 2,
+        "title": "Tercer Artículo",
+        "subtitle": "Descripción del tercer artículo",
+        "date": "30 / 04 / 2020",
+        "img": "imgThird.jpg",
+        "active": false
+    },
+    {
+        "id": 3,
+        "title": "Cuarto Artículo",
+        "subtitle": "Descripción del cuarto artículo",
+        "date": "30 / 04 / 2020",
+        "img": "imgFourth.jpg",
+        "active": false
+    },
+    {
+        "id": 4,
+        "title": "Quinto Artículo",
+        "subtitle": "Descripción del quinto artículo",
+        "date": "30 / 04 / 2020",
+        "img": "imgFifth.jpg",
+        "active": false
+    }
+]

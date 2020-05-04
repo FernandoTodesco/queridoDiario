@@ -1,0 +1,22 @@
+@import '../../shared/variables';
+
+.slider {
+    @include flex(space-evenly, center);
+    flex-grow: 1;
+    align-self: center;
+    padding: 0 50px;
+    
+    .slider__item {
+        background-color: $secondary;
+        border-radius: 20%;
+        height: 5px;
+        width: 30px;
+    }
+    
+    .slider__item--active {
+        background-color: $primary;
+        height: 6px;
+        width: 32px;        
+    }
+}
+    

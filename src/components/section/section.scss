@@ -1,0 +1,40 @@
+@import '../../shared/variables';
+
+.section {
+    display: grid;
+    grid-template-rows: 6fr 1fr;
+    align-items: center;     
+    
+    .section__main-article {
+        background-color: $white;
+        @include flex(center, start);
+    }
+    
+    .section__preview-articles {
+        display: none;
+    }
+}
+
+@media only screen and (min-width: $md_vw) {
+    .section {
+        grid-template-columns: 2fr 1fr;
+        
+        .section__preview-articles {
+            display: flex;
+            flex-direction: column;
+            max-height: 643px;
+            grid-column: 2/3;
+            grid-row: 1/3;
+        }
+        
+        .slider {
+            display: none;
+        }
+    }
+}
+
+@media only screen and (min-width: $lg_vw) {
+    .section {
+        grid-template-rows: 1fr;
+    }
+}

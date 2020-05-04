@@ -1,0 +1,20 @@
+// breakpoints
+$xs_vw: 0px;
+$sm_vw: 361px;
+$md_vw: 609px;
+$lg_vw: 800px;
+$xl_vw: 1040px;
+
+// colors
+$primary: rgb(154, 153, 180);
+$secondary: rgb(184, 183, 236);
+$gradient: rgb(226, 226, 240);
+$black: #000000;
+$white: #FFFFFF;
+
+// mixins
+@mixin flex($justify, $align) {
+    display: flex;
+    justify-content: $justify;
+    align-items: $align;
+}
