@@ -1,25 +1,25 @@
-@import '../../shared/variables';
+@import '../../../shared/variables';
 
-.section {
+.main {
     display: grid;
     grid-template-rows: 6fr 1fr;
     align-items: center;     
     
-    .section__main-article {
+    .main__main-article {
         background-color: $white;
         @include flex(center, start);
     }
     
-    .section__preview-articles {
+    .main__preview-articles {
         display: none;
     }
 }
 
 @media only screen and (min-width: $md_vw) {
-    .section {
+    .main {
         grid-template-columns: 2fr 1fr;
         
-        .section__preview-articles {
+        .main__preview-articles {
             display: flex;
             flex-direction: column;
             max-height: 643px;
@@ -34,7 +34,7 @@
 }
 
 @media only screen and (min-width: $lg_vw) {
-    .section {
+    .main {
         grid-template-rows: 1fr;
     }
 }

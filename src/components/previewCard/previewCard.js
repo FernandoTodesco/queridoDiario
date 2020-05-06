@@ -18,7 +18,7 @@ function getImg(img) {
 }
 
 function activate(id) {
-
+  console.log(id);
 }
 
 export default PreviewCard;
