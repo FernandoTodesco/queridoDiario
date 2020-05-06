@@ -7,7 +7,7 @@
     
     .main__main-article {
         background-color: $white;
-        @include flex(center, start);
+        @include flex(center, flex-start);
     }
     
     .main__preview-articles {

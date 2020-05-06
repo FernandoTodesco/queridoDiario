@@ -21,13 +21,15 @@
     .card__img {        
         max-width: 240px;
         max-height: 195px;
+        @include flex(center, center)
     }    
     .card__subtitle {
         color: $primary;
         font-size: 16px;
         font-weight: 400;
-        @include flex(flex-start, center);
+        padding: 5px;
         @extend .card__img;
+        @include flex(flex-start, center);
     }    
 }
 

@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useState} from 'react';
 import './main.scss'
 
 import Card from '../../../components/card/card';
@@ -6,20 +6,32 @@ import Slider from '../../../components/slider/slider';
 import PreviewCard from '../../../components/previewCard/previewCard';
 
 function Main(props) {
-
-  const active = props.news.findIndex((e) => e.active);
-  const nonActives = props.news.filter((e) => e.active === false);
-
+  
+  const [news] = useState(props.news);
+  const [mainArt, setMainArt] = useState(0);
+    
+  const previewArts = news.filter((e) => e.id !== mainArt);
+  
+  const activate = (id) => {
+    setMainArt(id);
+  }
+    
   return (
     <section className="main">
-        <article className="main__main-article">
-            <Card data={props.news[active]} />
-        </article>
-        <aside className="main__preview-articles">
-            <PreviewCard data={nonActives} />            
-        </aside>
-        <Slider />
-  </section>
+      <article className="main__main-article">            
+        <Card article={news[mainArt]} />            
+      </article>
+      <aside className="main__preview-articles">
+        {previewArts.map( article => 
+          <PreviewCard
+            article={article}
+            key={article.id}
+            activate={activate}
+          />            
+        )}
+      </aside>
+      <Slider />
+    </section>
   );
 }
 
