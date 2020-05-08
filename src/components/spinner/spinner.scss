@@ -1,0 +1,9 @@
+@import '../../shared/variables';
+
+.spinner {
+    @include flex(center, center);
+
+    .spinner__title {        
+        color: $secondary;
+    }
+}

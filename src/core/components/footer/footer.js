@@ -9,7 +9,7 @@ function Footer() {
             <p>Check the</p>
             <p>repo here</p>
           </div>
-          <img className="footer__logo" src={process.env.PUBLIC_URL + '/assets/gitLogo.png'} alt="footer logo" />
+          <img className="footer__logo" src={`${process.env.PUBLIC_URL}/assets/gitLogo.png`} alt="footer logo" />
         </a>
       </footer>
   );

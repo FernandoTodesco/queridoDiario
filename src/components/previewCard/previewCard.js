@@ -10,7 +10,7 @@ function PreviewCard(props) {
               <img
                 className="previewCard__img"
                 src={getImg(props.article.img)}
-                alt={"imagen de " + props.article.title} />
+                alt={`imagen de ${props.article.title}`} />
               <div className="previewCard__text">
                   <h2 className="previewCard__title">{props.article.title}</h2>
                   <h3 className="previewCard__date">{props.article.date}</h3>
@@ -20,7 +20,7 @@ function PreviewCard(props) {
 }
 
 function getImg(img) {
-    return process.env.PUBLIC_URL + '/assets/' + img;
+    return `${process.env.PUBLIC_URL}/assets/${img}`;
 }
 
 export default PreviewCard;
