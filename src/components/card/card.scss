@@ -2,52 +2,63 @@
 
 .card {
     background-color: $white;
-    display: grid;
-    grid-template-rows: 0.5fr 1fr 3fr 2fr;
-    padding: 0 15px;
+    height: 60vh;
+    display: flex;
+    flex-direction: column;    
+    justify-content: space-around;
+    padding: 0 5%;
     
     .card__date {
         color: $primary;
-        font-size: 16px;
+        font-size: 12px;
         font-weight: 400;
         align-self: flex-end;
+        padding: 0 10px;
     }
     .card__title {
         color: $black;
-        font-size: 30px;
+        font-size: 18px;
         font-weight: 600;
-        @include flex(flex-start, center)
+        align-self: center;
+        padding: 10px;
     }
     .card__img {        
-        max-width: 240px;
+        width: 240px;
         max-height: 195px;
-        @include flex(center, center)
+        align-self: center;
     }    
     .card__subtitle {
         color: $primary;
-        font-size: 16px;
+        font-size: 12px;
         font-weight: 400;
-        padding: 5px;
-        @extend .card__img;
-        @include flex(flex-start, center);
+        padding: 15px;
     }    
 }
 
-@media only screen and (min-width: $lg_vw) {
+@media only screen and (min-width: $sm_vw) {
     .card {
-        grid-template-rows: 0.5fr 1fr 8fr 3fr;        
+        
+        .card__date {
+            font-size: 16px;
+        }
+        .card__title {
+            font-size: 22px;
+        }
+        .card__subtitle {
+            font-size: 16px;
+        }
         .card__img {
-            max-width: 400px;
+            width: 650px;
+            max-width: 90%;
             max-height: 600px;
         }
     }
 }
 
-@media only screen and (min-width: $xl_vw) {
+@media only screen and (min-width: $md_vw) {
     .card {
-        grid-template-rows: 0.5fr 1fr 12fr 2fr;        
-        .card__img {
-            max-width: 650px;
+        .card__date {
+            align-self: flex-start;
         }
     }
 }

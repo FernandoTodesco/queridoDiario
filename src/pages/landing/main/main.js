@@ -17,16 +17,18 @@ function Main() {
     
   useEffect(()=>{
     setNews(newsData());
-    setPreviewArts(news.filter((e) => e.id !== mainArt));
+    setPreviewArts(news.filter((e) => e.url !== news[mainArt].url));
     
-    setTimeout(function(){
+    let timer = setTimeout(function(){
       setLoading(false);
     }, 1000); 
+
+    return () => clearTimeout(timer)
     
-  }, [news, mainArt])  
+  }, [news, mainArt])    
   
-  const activate = (id) => {
-    setMainArt(id);
+  const activate = (url) => {    
+    setMainArt(news.findIndex((e) => url === e.url));
   }
   
   return (
@@ -42,7 +44,7 @@ function Main() {
           {previewArts.map( article => 
             <PreviewCard
               article={article}
-              key={article.id}
+              key={article.url}
               activate={activate}
             />            
           )}

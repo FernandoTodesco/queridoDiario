@@ -1,37 +1,132 @@
 [
     {
-        "id": 0,
-        "title": "Primer Artículo",
-        "subtitle": "Descripción del primer artículo, acá tiene que entrar mucho texto.. tendría que haber buscado un lorem ipso.. lorem ipso? se escribe así? w/e",
-        "date": "30 / 04 / 2020",
-        "img": "imgFirst.jpg"
+        "source": {
+            "id": "techcrunch",
+            "name": "TechCrunch"
+        },
+        "author": "Darrell Etherington",
+        "title": "Mount Sinai deploys Google Nest cameras for COVID-19 patient monitoring and communication",
+        "description": "The ongoing global COVID-19 pandemic has sparked a lot of activity around remote care, but a new project by Mount Sinai hospital, working in collaboration with Google’s Nest, shows how even on-premise care can be made safer using remote technologies. Clinicia…",
+        "url": "https://techcrunch.com/2020/05/11/mount-sinai-deploys-google-nest-cameras-for-covid-19-patient-monitoring-and-communication/",
+        "urlToImage": "https://techcrunch.com/wp-content/uploads/2020/05/MSH_Nest_3.max-1000x1000-1.jpg?w=601",
+        "publishedAt": "2020-05-11T13:46:50Z",
+        "content": "The ongoing global COVID-19 pandemic has sparked a lot of activity around remote care, but a new project by Mount Sinai hospital, working in collaboration with Google’s Nest, shows how even on-premise care can be made safer using remote technologies. Clinicia… [+1751 chars]"
     },
     {
-        "id": 1,
-        "title": "Segundo Artículo",
-        "subtitle": "Descripción del segundo artículo",
-        "date": "30 / 04 / 2020",
-        "img": "imgSecond.jpg"
+        "source": {
+            "id": "techcrunch",
+            "name": "TechCrunch"
+        },
+        "author": "Alex Wilhelm",
+        "title": "Equity Monday: Kingsoft Cloud, Shiprocket, and who wants to make a contrarian investment?",
+        "description": "Good morning friends, and welcome back to TechCrunch’s Equity Monday, a short-form audio hit to kickstart your week. Another weekend at home, another week’s starting from the same spot. How are you holding up? Do you miss your commute yet? Just want to get so…",
+        "url": "https://techcrunch.com/2020/05/11/equity-monday-kingsoft-cloud-shiprocket-and-who-wants-to-make-a-contrarian-investment/",
+        "urlToImage": "https://techcrunch.com/wp-content/uploads/2019/12/equity-podcast-2019-phone-1-3.jpg?w=430",
+        "publishedAt": "2020-05-11T13:38:49Z",
+        "content": "Good morning friends, and welcome back to TechCrunchs Equity Monday, a short-form audio hit to kickstart your week.\r\nAnother weekend at home, another week’s starting from the same spot. How are you holding up? Do you miss your commute yet? Just want to get so… [+1419 chars]"
     },
     {
-        "id": 2,
-        "title": "Tercer Artículo",
-        "subtitle": "Descripción del tercer artículo",
-        "date": "30 / 04 / 2020",
-        "img": "imgThird.jpg"
+        "source": {
+            "id": "techcrunch",
+            "name": "TechCrunch"
+        },
+        "author": "Alex Wilhelm",
+        "title": "Hunter Walk: Damn the TAM and other seed startup thoughts",
+        "description": "Hunter Walk thinks your TAM slide is stupid. That’s one viewpoint that the seed-stage investor shared with TechCrunch that made us laugh during our recent conversation. Walk joined us for an Extra Crunch Live chat late last week that was a mix of advice and i…",
+        "url": "https://techcrunch.com/2020/05/11/hunter-walk-damn-the-tam-and-other-seed-startup-thoughts/",
+        "urlToImage": "https://techcrunch.com/wp-content/uploads/2020/04/Hunter-Walk.jpg?w=564",
+        "publishedAt": "2020-05-11T13:15:38Z",
+        "content": "Hunter Walk thinks your TAM slide is stupid.\r\nThat’s one viewpoint that the seed-stage investor shared with TechCrunch that made us laugh during our recent conversation. Walk joined us for an Extra Crunch Live chat late last week that was a mix of advice and … [+1703 chars]"
     },
     {
-        "id": 3,
-        "title": "Cuarto Artículo",
-        "subtitle": "Descripción del cuarto artículo",
-        "date": "30 / 04 / 2020",
-        "img": "imgFourth.jpg"
+        "source": {
+            "id": "techcrunch",
+            "name": "TechCrunch"
+        },
+        "author": "Jonathan Shieber",
+        "title": "\"People are in the fights of their lives \" with alcohol use disorders, and Monument wants to help",
+        "description": "Over 14.4 million adults over the age of 18 in the United States exhibited some kind of alcohol use disorder and only about 7.9 percent of those people received treatment. Alcohol-related deaths kill roughly 88,000 people in the U.S. — making it the third lea…",
+        "url": "https://techcrunch.com/2020/05/11/people-are-in-the-fights-of-their-lives-with-alcohol-use-disorders-and-monument-wants-to-help/",
+        "urlToImage": "https://techcrunch.com/wp-content/uploads/2020/02/GettyImages-1047707680.jpg?w=570",
+        "publishedAt": "2020-05-11T13:01:47Z",
+        "content": "Over 14.4 million adults over the age of 18 in the United States exhibited some kind of alcohol use disorder and only about 7.9 percent of those people received treatment. Alcohol-related deaths kill roughly 88,000 people in the U.S. — making it the third lea… [+6201 chars]"
     },
     {
-        "id": 4,
-        "title": "Quinto Artículo",
-        "subtitle": "Descripción del quinto artículo",
-        "date": "30 / 04 / 2020",
-        "img": "imgFifth.jpg"
+        "source": {
+            "id": "techcrunch",
+            "name": "TechCrunch"
+        },
+        "author": "Jordan Crook",
+        "title": "Docket, a platform for organizing meeting agendas and notes, wins Zoom's Marketplace App competition",
+        "description": "In an episode of Extra Crunch Live last week, Roelof Botha expressed excitement not only about the shift to teleconference platforms like Zoom, but the apps and bots that may spring up on top of the Zoom ecosystem. Interestingly, Zoom just announced the resul…",
+        "url": "https://techcrunch.com/2020/05/11/docket-a-platform-for-organizing-meeting-agendas-and-notes-wins-zooms-marketplace-app-competition/",
+        "urlToImage": "https://techcrunch.com/wp-content/uploads/2020/05/docketbot.png?w=615",
+        "publishedAt": "2020-05-11T13:00:59Z",
+        "content": "In an episode of Extra Crunch Live last week, Roelof Botha expressed excitement not only about the shift to teleconference platforms like Zoom, but the apps and bots that may spring up on top of the Zoom ecosystem.\r\nInterestingly, Zoom just announced the resu… [+2342 chars]"
+    },
+    {
+        "source": {
+            "id": "techcrunch",
+            "name": "TechCrunch"
+        },
+        "author": "Kirsten Korosec",
+        "title": "The Station: Uber has a taste for Lime, Tesla drama, Moovit gets acquired",
+        "description": "The Station is a weekly newsletter dedicated to all things transportation. Sign up here — just click The Station — to receive it every Saturday in your inbox. Hi and welcome back to The Station, I’m your host Kirsten Korosec, senior transportation reporter at…",
+        "url": "https://techcrunch.com/2020/05/11/the-station-uber-has-a-taste-for-lime-tesla-drama-moovit-gets-acquired/",
+        "urlToImage": "https://techcrunch.com/wp-content/uploads/2019/07/GettyImages-1159465876.jpg?w=597",
+        "publishedAt": "2020-05-11T11:00:39Z",
+        "content": "The Station is a weekly newsletter dedicated to all things transportation. Sign up here just click The Station to receive it every Saturday in your inbox.\r\nHi and welcome back to The Station, I’m your host Kirsten Korosec, senior transportation reporter at Te… [+11368 chars]"
+    },
+    {
+        "source": {
+            "id": "techcrunch",
+            "name": "TechCrunch"
+        },
+        "author": "Manish Singh",
+        "title": "India's logistics aggregator Shiprocket raises $13M to expand overseas",
+        "description": "Shiprocket, a New Delhi-based logistics aggregator that works with direct-to-consumer sellers including several social media influencers, has raised $13 million in a new financing round as it looks to expand its platform overseas. Silicon Valley-based investm…",
+        "url": "https://techcrunch.com/2020/05/11/indias-logistics-aggregator-shiprocket-raises-13m-to-expand-overseas/",
+        "urlToImage": "https://techcrunch.com/wp-content/uploads/2020/05/GettyImages-683975638.jpg?w=600",
+        "publishedAt": "2020-05-11T09:19:44Z",
+        "content": "Shiprocket, a New Delhi-based logistics aggregator that works with direct-to-consumer sellers including several social media influencers, has raised $13 million in a new financing round as it looks to expand its platform overseas.\r\nSilicon Valley-based invest… [+2583 chars]"
+    },
+    {
+        "source": {
+            "id": "techcrunch",
+            "name": "TechCrunch"
+        },
+        "author": "Steve O'Hear",
+        "title": "Balderton Capital backs Primer, a fintech helping merchants consolidate the payments stack",
+        "description": "Primer, a U.K. fintech that wants to help merchants consolidate their payments stack and easily support new payment methods in the future, has quietly raised £3.8 million in funding. Leading its £3.2 million seed round is Balderton Capital — which mostly does…",
+        "url": "https://techcrunch.com/2020/05/11/primer/",
+        "urlToImage": "https://techcrunch.com/wp-content/uploads/2020/05/primer-team-.png?w=697",
+        "publishedAt": "2020-05-11T08:30:30Z",
+        "content": "Primer, a U.K. fintech that wants to help merchants consolidate their payments stack and easily support new payment methods in the future, has quietly raised £3.8 million in funding.\r\nLeading its £3.2 million seed round is Balderton Capital — which mostly doe… [+4587 chars]"
+    },
+    {
+        "source": {
+            "id": "techcrunch",
+            "name": "TechCrunch"
+        },
+        "author": "Steve O'Hear",
+        "title": "Vochi, the 'computer vision'-based video editing and effects app, raises $1.5M seed",
+        "description": "Vochi, a startup operating out of Belarus that’s created a “computer vision”-based video editing and effects app for mobile phones, has raised $1.5 million in seed funding. Leading the round is Ukraine-based Genesis Investments (backer of BetterMe and Jiji). …",
+        "url": "https://techcrunch.com/2020/05/11/vochi/",
+        "urlToImage": "https://techcrunch.com/wp-content/uploads/2020/05/VOCHI_cover.png?w=711",
+        "publishedAt": "2020-05-11T08:00:59Z",
+        "content": "Vochi, a startup operating out of Belarus that’s created a “computer vision”-based video editing and effects app for mobile phones, has raised $1.5 million in seed funding.\r\nLeading the round is Ukraine-based Genesis Investments (backer of BetterMe and Jiji).… [+1978 chars]"
+    },
+    {
+        "source": {
+            "id": "techcrunch",
+            "name": "TechCrunch"
+        },
+        "author": "Catherine Shu",
+        "title": "Biotherapeutics startup Hummingbird Bioscience brings its total Series B funding to $25 million",
+        "description": "Hummingbird Bioscience, a startup focused on developing new treatments for cancer and other diseases, announced today it has added $6 million to its previously announced Series B, bringing the round’s total to $25 million. The extension was led by SK Holdings…",
+        "url": "https://techcrunch.com/2020/05/11/biotherapeutics-startup-hummingbird-bioscience-brings-its-total-series-b-funding-to-25-million/",
+        "urlToImage": "https://techcrunch.com/wp-content/uploads/2020/05/GettyImages-90719935.jpg?w=598",
+        "publishedAt": "2020-05-11T07:54:23Z",
+        "content": "Hummingbird Bioscience, a startup focused on developing new treatments for cancer and other diseases, announced today it has added $6 million to its previously announced Series B, bringing the rounds total to $25 million.\r\nThe extension was led by SK Holdings… [+1471 chars]"
     }
 ]

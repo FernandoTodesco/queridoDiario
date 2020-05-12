@@ -4,15 +4,23 @@
   background-color: $primary;
   @include flex(space-between, center);
   padding: 0 27px 0 15px;
-  flex-grow: 1;  
 
   .header__logo {
     cursor: pointer;
+    height: 60px;
   }
 
   .header__burger {
     width: 34px;
     height: 34px;
     cursor: pointer;
+  }
+}
+
+@media only screen and (min-width: $md_vw) {
+  .header {
+    .header__logo {
+      height: auto;
+    }
   }
 }

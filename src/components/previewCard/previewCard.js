@@ -5,22 +5,18 @@ function PreviewCard(props) {
     return (
         <div
           className="previewCard"
-          onClick={props.activate.bind(this, props.article.id)}
-          key={props.article.id}>
+          onClick={props.activate.bind(this, props.article.url)}
+          key={props.article.url}>
               <img
                 className="previewCard__img"
-                src={getImg(props.article.img)}
+                src={props.article.urlToImage}
                 alt={`imagen de ${props.article.title}`} />
               <div className="previewCard__text">
                   <h2 className="previewCard__title">{props.article.title}</h2>
-                  <h3 className="previewCard__date">{props.article.date}</h3>
+                  <h3 className="previewCard__date">{props.article.publishedAt}</h3>
             </div>
         </div>
     );
-}
-
-function getImg(img) {
-    return `${process.env.PUBLIC_URL}/assets/${img}`;
 }
 
 export default PreviewCard;

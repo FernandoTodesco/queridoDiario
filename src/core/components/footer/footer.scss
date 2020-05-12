@@ -4,17 +4,34 @@
 .footer {
     background-color: $primary;
     @include flex(flex-end, center);
-    flex-grow: 1;
-    padding: 0 15px;;
+    padding: 0 15px;
     
-    .footer__text {
-        font-weight: 600;
-        color: $black;        
-    }
-    
-    .footer__link {
+    .footer__link {        
         text-decoration: none;
         display: flex;
         align-items: center;
+        
+        .footer__text {
+            font-size: 0.9rem;
+            font-weight: 600;
+            color: $black;        
+        }
+        
+        .footer__logo {
+            height: 40px;            
+        }
+    }
+}
+
+@media only screen and (min-width: $md_vw) {
+    .footer {
+        .footer__link {
+            .footer__text {
+                font-size: 1rem;
+            }
+            .footer__logo {
+                height: auto;
+            }
+        }
     }
 }
