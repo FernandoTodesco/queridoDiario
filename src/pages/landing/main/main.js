@@ -16,17 +16,18 @@ function Main() {
   const [loading, setLoading ] = useState(true);
     
   useEffect(()=>{
-    setNews(newsData());
+    loadData();
     setPreviewArts(news.filter((e) => e.url !== news[mainArt].url));
     
     let timer = setTimeout(function(){
       setLoading(false);
     }, 1000); 
-
+    
     return () => clearTimeout(timer)
     
   }, [news, mainArt])    
   
+  const loadData = async () => await setNews(newsData());
   const activate = (url) => {    
     setMainArt(news.findIndex((e) => url === e.url));
   }
