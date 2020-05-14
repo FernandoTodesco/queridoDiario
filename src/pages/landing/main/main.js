@@ -1,37 +1,43 @@
-import React, {useState , useEffect} from 'react';
+import React, {useContext, useState , useEffect} from 'react';
 import { Link } from 'react-router-dom';
 import './main.scss'
+
+import { AppContext } from '../../../contexts/AppContext';
 
 import Card from '../../../components/card/card';
 import Slider from '../../../components/slider/slider';
 import PreviewCard from '../../../components/previewCard/previewCard';
 import Spinner from '../../../components/spinner/spinner';
-import newsData from '../../../services/newsData';
 
 function Main() {  
 
-  const [news, setNews] = useState([]);
+  const { newsState, searchState } = useContext(AppContext);
+  const [news] = newsState;
+  const [search] = searchState;
   const [mainArt, setMainArt] = useState(0);
   const [previewArts, setPreviewArts] = useState([]);
   const [loading, setLoading ] = useState(true);
+
+  const searchedNews = news.filter((noticia) => (
+    noticia.title.toLowerCase().indexOf(search.toLowerCase()) !== -1) ||
+    noticia.content.toLowerCase().indexOf(search.toLowerCase()) !== -1);
+
+  const topHeadlines = news.filter((e) => e.url !== news[mainArt].url);
     
   useEffect(()=>{
-    loadData();
-    setPreviewArts(news.filter((e) => e.url !== news[mainArt].url));
+    setPreviewArts(search !== '' ? searchedNews : topHeadlines);
     
     let timer = setTimeout(function(){
       setLoading(false);
     }, 1000); 
-    
-    return () => clearTimeout(timer)
-    
-  }, [news, mainArt])    
+
+    return () => clearTimeout(timer);    
+  }, [news, mainArt, search])    
   
-  const loadData = async () => await setNews(newsData());
   const activate = (url) => {    
     setMainArt(news.findIndex((e) => url === e.url));
   }
-  
+ 
   return (
     loading 
     ? <Spinner />

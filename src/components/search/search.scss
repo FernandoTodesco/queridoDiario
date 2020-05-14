@@ -1,0 +1,30 @@
+@import '../../shared/variables';
+
+.searchBar {
+    display: none;    
+    border: none;
+    outline: none;
+    background: $white;
+    width: 200px;
+    height: 30px;
+    border-radius: 30px;
+    font-size: .9rem;
+    color: $primary;
+    padding: 0 20px;
+    margin: 0 2vh 0 0;
+    
+    &:hover {
+        box-shadow: 0 0 10px rgba($color: $black, $alpha: 0.25);
+        cursor: pointer;
+
+        &:focus {
+            cursor: text;
+        }
+    }		
+}
+
+@media only screen and (min-width: $md_vw) {
+    .searchBar {
+        display: flex;
+    }
+}
